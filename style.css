@@ -1,0 +1,39 @@
+body {
+  display: flex;
+  flex-direction: column;
+}
+
+.header {
+  background-color: #1F2937;
+  display: flex;
+  justify-content: space-between;
+  height: 100px;
+  color: white;
+}
+
+.header-links {
+  gap: 20px;
+}
+.main-body {
+  background-color: #1F2937;
+  display: flex;
+}
+
+.info {
+}
+
+.card-container {
+  display: flex;
+}
+.quote {
+  background-color: #E5E7EB;
+}
+
+.sign-up {
+  background-color: #3882F6;
+  display: flex;
+}
+
+.footer {
+  background-color: #1F2937;
+}
