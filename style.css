@@ -1,39 +1,173 @@
+@font-face {
+  font-family: custom-font;
+  src: url(roboto.woff);
+}
+
 body {
   display: flex;
   flex-direction: column;
+  font-family: serif, Roboto, Times;
+  margin: 0;
 }
 
-.header {
-  background-color: #1F2937;
-  display: flex;
-  justify-content: space-between;
-  height: 100px;
+
+button {
+  height: 40px;
+  padding: 5px 32px;
+  text-align: center;
+  font-size: 16px;
+  background-color: #f5a244;
   color: white;
+  border: 2px solid white;
+  border-radius: 8px;
+}
+.main-body,
+.info,
+.quote,
+.sign-up {
+  padding-top: 70px;
+  padding-bottom: 70px;
 }
 
-.header-links {
-  gap: 20px;
+.header,
+.footer {
+  padding-top: 20px;
+  padding-bottom: 20px;
 }
-.main-body {
-  background-color: #1F2937;
-  display: flex;
+
+.header,
+.main-body, 
+.sign-up {
+  padding-left: 160px;
+  padding-right: 160px;
+}
+
+.quote {
+  padding-left: 240px;
+  padding-right: 240px;
 }
 
 .info {
+  padding-left: 200px;
+  padding-right: 200px;
+}
+
+.main-body,
+.footer,
+.header {
+  background-color: #ca3c28;
+}
+
+.quote-text,
+.info-header {
+  color: #ca3c28;
+}
+
+.header,
+.main-body,
+.sign-up,
+.footer {
+  color: white;
+}
+
+.header-logo {
+  font-size: 24px;
+}
+.main-header {
+  font-size: 48px;
+  font-weight: extra-bold;
+}
+
+.info-header {
+  font-size: 36px;
+  font-weight: extra-bold;
+} 
+
+.main-text {
+  font-size: 18px;
+}
+
+.quote-text {
+  font-style: italic;
+  font-size: 36px;
+}
+
+.quote-name {
+  text-align: right;
+  font-weight: bold;
+}
+
+.call-to-action {
+  font-weight: bold;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  height: 100px;
+  align-items: center;
+}
+
+.header-links {
+  display: flex;
+  gap: 20px;
+}
+.main-body {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100%;
+}
+
+.main-body-container {
+  width: 300px;
+}
+
+.main-img {
+  width: 50%;
+  object-fit: contain;
+}
+.info {
+  text-align: center;
+}
+
+
+.card-img {
+  width: 100%;
+  height: 100px;
+  border-style: solid;
+  border-color: #ca3c28;
+  border-radius: 4px;
+}
+.card-text {
 }
 
 .card-container {
   display: flex;
+  flex-flow: row wrap;
+  gap: 30px;
+  justify-content: center;
 }
+
+.card {
+  width: 100px;
+  flex-wrap: wrap;
+} 
+
 .quote {
   background-color: #E5E7EB;
 }
 
-.sign-up {
-  background-color: #3882F6;
+.sign-up-container {
+  background-color: #f5a244;
   display: flex;
+  justify-content: space-between;
+  border-radius: 8px;
+  padding: 20px 50px;
+  align-items: center;
 }
 
 .footer {
-  background-color: #1F2937;
+  display: flex;
+  justify-content: center;
 }
